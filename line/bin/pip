@@ -1,4 +1,4 @@
-#!/Users/s-matayoshi/project/chatbot/line/bin/python3.9
+#!/Users/sakamotoharuki/Documents/chatbot/line/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

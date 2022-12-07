@@ -1,4 +1,4 @@
-#!/Users/s-matayoshi/project/chatbot/line/bin/python3.9
+#!/Users/sakamotoharuki/Documents/chatbot/line/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'future==0.18.2','console_scripts','pasteurize'
 import re
 import sys
