@@ -50,3 +50,6 @@ deactivate
 # 参考
 LineBot公式GitHub<br>
 https://github.com/line/line-bot-sdk-python
+
+# TODO
+venvで作成されたファイルを共有しない様にする
