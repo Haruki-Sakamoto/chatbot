@@ -10,7 +10,7 @@ app = Flask(__name__)
 def is_active():
     return 'line-bot起動中' 
 
-if __name__ == '__main__':
+if __name__ == 'main':
     # ジョブを実行する時間を登録する。
     schedule.every().day.at('06:00').do(notice.gomi_check_and_message)
     schedule.every().day.at('23:00').do(notice.bed_time_notice)
