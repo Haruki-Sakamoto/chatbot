@@ -4,18 +4,17 @@ import time
 
 import notice
 
-# ジョブを実行する時間を登録する。
-schedule.every().day.at('06:00').do(notice.gomi_check_and_message)
-schedule.every().day.at('23:00').do(notice.bed_time_notice)
-schedule.every().day.at('21:00').do(notice.bed_time_notice)
-schedule.every().day.at('23:00').do(notice.bed_time_notice)
-schedule.every().day.at('23:05').do(notice.bed_time_notice)
-schedule.every().day.at('23:10').do(notice.bed_time_notice)
-
 app = Flask(__name__)
 
 @app.route('/')
 def is_active():
+    # ジョブを実行する時間を登録する。
+    schedule.every().day.at('06:00').do(notice.gomi_check_and_message)
+    schedule.every().day.at('23:00').do(notice.bed_time_notice)
+    schedule.every().day.at('21:00').do(notice.bed_time_notice)
+    schedule.every().day.at('23:15').do(notice.bed_time_notice)
+    schedule.every().day.at('23:20').do(notice.bed_time_notice)
+    schedule.every().day.at('23:25').do(notice.bed_time_notice)
     schedule.run_pending()
     return 'line-bot起動中'
     
